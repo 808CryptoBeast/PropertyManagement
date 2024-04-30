@@ -1,0 +1,138 @@
+/* Reset default margin and padding */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('images/login.png');
+  background-size: cover;
+  background-position: center bottom;
+  background-attachment: fixed;
+  color: white;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  margin: 0 10px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s;
+}
+
+.navbar a i {
+  margin-right: 10px; /* Add margin between icon and text */
+}
+
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+main {
+  max-width: 600px;
+  margin: 160px auto 20px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 16px 16px 16px rgba(241, 87, 40, 0.76);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+label i {
+  margin-right: 10px; /* Add spacing between icon and text */
+  font-size: 20px; /* Increase icon size */
+  color: #0fc2b3; /* Set default icon color */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  width: calc(50% - 5px); /* Set width to half of the input fields with some spacing */
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Add transition effect */
+  align-self: center; /* Center the button horizontally */
+}
+
+button[type="submit"]:hover {
+  background-color: #959317;
+}
+
+p {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Hover effect for Register link */
+p a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s; /* Smooth transition for color change */
+}
+
+p a:hover {
+  color: rgb(172, 174, 39); /* Change text color on hover */
+}
+
+/* Additional section styling */
+.section-background {
+  padding: 20px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+.iconify {
+  /* Additional styles for the Iconify icon */
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  transition: color 0.3s ease; /* Add transition for color change */
+}
+
+.iconify:hover {
+  color: red; /* Change color on hover */
+}
+

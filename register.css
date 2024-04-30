@@ -1,0 +1,144 @@
+/* Reset default margin and padding */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('images/registration.png');
+  background-size: cover;
+  background-position: center bottom;
+  background-attachment: fixed;
+  color: white;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  margin: 0 10px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar a i {
+  margin-right: 10px;
+}
+
+main {
+  max-width: 600px;
+  margin: 150px auto 20px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 16px 16px 16px rgba(4, 188, 255, 0.544);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+label i {
+  margin-right: 10px; /* Add spacing between icon and text */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  height: 40px; /* Set consistent height for all input fields */
+  color: #333; /* Set text color for input fields */
+  background-color: rgba(255, 255, 255, 0.8); /* Set background color for input fields */
+}
+
+button[type="submit"] {
+  width: calc(50% - 5px); /* Set width to half of the input fields with some spacing */
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Add transition effect */
+  align-self: center; /* Center the button horizontally */
+}
+
+button[type="submit"]:hover {
+  background-color: #0b560c;
+}
+
+p {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Additional section styling */
+.section-background {
+  padding: 20px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+p a {
+  color: rgb(237, 239, 244);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+p a:hover {
+  color: #39930d; /* Change link color on hover */
+}
+
+#error-message,
+#success-message {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+#error-message {
+  color: red;
+}
+
+#success-message {
+  color: green;
+}
+
