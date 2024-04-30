@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - Property Management Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Your Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="#"><span class="material-symbols--digital-out-of-home-sharp"></span></a></li>
+                <li><a href="#"><span class="vscode-icons--file-type-poedit"></span></a></li>
+                <li><a href="#"><span class="marketeq--settings"></span></a></li>
+                <li><a href="#"><span class="mdi--exit-run"></span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+        <div class="profile">
+            <img src="https://example.com/profile.jpg" alt="Profile Photo">
+            <h2>User Name</h2>
+            <p>Account: user123</p>
+        </div>
+        <div class="sidebar-links">
+            <ul>
+                <li><a href="#"><span class="vscode-icons--file-type-homeassistant"></span>Dashboard</a></li>
+                <li><a href="#"><span class="oui--token-property"></span>Properties</a></li>
+                <li><a href="#"><span class="fluent--people-audience-32-filled"></span>Tenants</a></li>
+                <li><a href="#"><span class="icon-park--image-files"></span>Leases</a></li>
+                <li><a href="#"><span class="pajamas--issue-type-maintenance"></span>Maintenance</a></li>
+                <li>
+                    <a href="#"><span class="material-symbols--energy-program-time-used-outline-rounded"></span>Utilities</a>
+                    <ul>
+                        <li><a href="#"><span class="mdi--home-electricity"></span>Electricity</a></li>
+                        <li><a href="#"><span class="icon-park--water-level"></span>Water</a></li>
+                        <li><a href="#"><span class="mdi--rubbish-bin-empty"></span>Waste</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><span class="icon-park-twotone--newspaper-folding"></span>Reports</a></li>
+                <li><a href="../checklist.html"><span class="icon-park--checklist"></span>Checklist</a></li>
+
+            </ul>
+        </div>
+        <div id="theme-switch" class="theme-switch">
+          <label for="dark-mode-toggle">Dark Mode</label>
+          <div class="slider round"></div>
+        </div>
+      </div>
+
+    <main>
+        <section id="user-info" class="section">
+            <h2>User Information</h2>
+            <div id="user-details" class="user-details-container">
+                <img src="https://example.com/profile.jpg" alt="Profile Photo">
+                <p><strong>User Name:</strong> User Name</p>
+                <p><strong>Account:</strong> user123</p>
+            </div>
+        </section>
+
+        <section id="overview" class="section">
+          <h2>Overview</h2>
+          <div class="overview-content">
+              <div class="property-details card">
+                  <h3>Property Details</h3>
+                  <p><strong>Property Name:</strong> ABC Apartments</p>
+                  <p><strong>Address:</strong> 123 Main Street, City, State</p>
+                  <p><strong>Property Type:</strong> Residential</p>
+                  <p><strong>Size:</strong> 20,000 sq ft</p>
+                  <p><strong>Year Built:</strong> 2005</p>
+              </div>
+              <div class="financial-summary card">
+                  <h3>Financial Summary</h3>
+                  <p><strong>Rent Roll:</strong> $50,000</p>
+                  <p><strong>Occupancy Rate:</strong> 90%</p>
+                  <p><strong>Expenses (Monthly):</strong> $10,000</p>
+              </div>
+              <div class="utilities-consumption card">
+                  <h3>Utilities Consumption</h3>
+                  <p><strong>Energy Usage:</strong> 1,000 kWh</p>
+                  <p><strong>Water Consumption:</strong> 10,000 gallons</p>
+                  <p><strong>Waste Management:</strong> Recycling: 50%, Trash: 50%</p>
+              </div>
+              <div class="asset-management card">
+                  <h3>Asset Management</h3>
+                  <p><strong>Inventory:</strong> Appliances, Fixtures, Equipment</p>
+                  <p><strong>Depreciation Schedule:</strong> Annual review</p>
+              </div>
+      
+              <!-- Add more sections below with similar structure -->
+              <div class="maintenance card">
+                  <h3>Maintenance</h3>
+                  <p><strong>Recent Repairs:</strong> HVAC system replacement</p>
+                  <p><strong>Scheduled Maintenance:</strong> Quarterly inspections</p>
+                  <p><strong>Maintenance History:</strong> Log of past activities</p>
+              </div>
+              <div class="vendor-management card">
+                  <h3>Vendor Management</h3>
+                  <p><strong>Preferred Vendors:</strong> HVAC, Plumbing, Landscaping</p>
+                  <p><strong>Contract Renewals:</strong> Annually reviewed</p>
+                  <p><strong>Performance Tracking:</strong> Satisfaction surveys</p>
+              </div>
+              <div class="security card">
+                  <h3>Security</h3>
+                  <p><strong>Security Systems:</strong> CCTV, Access Control</p>
+                  <p><strong>Incident Response:</strong> Emergency protocols</p>
+                  <p><strong>Partnerships:</strong> Local law enforcement</p>
+              </div>
+              <div class="reports-analytics card">
+                  <h3>Reports & Analytics</h3>
+                  <p><strong>Occupancy Trends:</strong> Year-over-year analysis</p>
+                  <p><strong>Financial Performance:</strong> ROI calculations</p>
+                  <p><strong>Market Insights:</strong> Comparative analysis</p>
+              </div>
+          </div>
+      </section>
+
+      <section id="customization" class="section">
+        <h2>Customization</h2>
+        <form id="customize-form">
+            <div class="upload-container">
+                <div class="upload-box" id="profile-photo-box">
+                    <p>Drag & Drop Profile Photo</p>
+                </div>
+                <div class="upload-box" id="background-image-box">
+                    <p>Drag & Drop Background Image</p>
+                </div>
+            </div>
+            <button type="submit">Save Changes</button>
+        </form>
+    </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
