@@ -27,53 +27,23 @@ document.addEventListener('DOMContentLoaded', function() {
     toggleTheme();
   });
 
-  const user = {
-    username: 'john_doe',
-    fullName: 'John Doe',
-    email: 'john@example.com',
-    profilePhoto: 'https://example.com/profile.jpg',
-    backgroundImage: 'https://example.com/background.jpg'
-  };
-
-  function displayUserInfo(user) {
-    const userDetailsDiv = document.getElementById('user-details');
-    userDetailsDiv.innerHTML = `
-      <p><strong>Username:</strong> ${user.username}</p>
-      <p><strong>Full Name:</strong> ${user.fullName}</p>
-      <p><strong>Email:</strong> ${user.email}</p>
-      <img src="${user.profilePhoto}" alt="Profile Photo" style="max-width: 200px; border-radius: 50%;">
-    `;
-  }
-
-  displayUserInfo(user);
-
   const customizeForm = document.getElementById('customize-form');
   customizeForm.addEventListener('submit', function(event) {
     event.preventDefault();
-    const profilePhotoUrl = customizeForm.elements['profile-photo'].value;
-    const backgroundImageUrl = customizeForm.elements['background-image'].value;
-    user.profilePhoto = profilePhotoUrl;
-    user.backgroundImage = backgroundImageUrl;
-    displayUserInfo(user);
+    // Reset the form
     customizeForm.reset();
   });
+});
 
-  const uploadBoxes = document.querySelectorAll('.upload-box');
-  uploadBoxes.forEach((box) => {
-    box.addEventListener('dragover', (e) => {
-      e.preventDefault();
-      box.classList.add('dragover');
-    });
+document.addEventListener('DOMContentLoaded', function() {
+  // Target the logout link by its ID
+  const logoutLink = document.getElementById('logout-link');
 
-    box.addEventListener('dragleave', () => {
-      box.classList.remove('dragover');
-    });
+  // Add a click event listener to the logout link
+  logoutLink.addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default behavior of the link
 
-    box.addEventListener('drop', (e) => {
-      e.preventDefault();
-      const file = e.dataTransfer.files[0];
-      console.log('File dropped:', file.name);
-      box.classList.remove('dragover');
-    });
+    // Perform the redirection to login.html
+    window.location.href = '/auth/login.html';
   });
 });
