@@ -15,11 +15,10 @@ header {
   text-align: center;
 }
 
-/* CSS for Icon Buttons */
+/* Navigation Styles */
 nav ul {
   list-style-type: none;
   padding: 0;
-  border: 3px black;
 }
 
 nav ul li {
@@ -29,30 +28,17 @@ nav ul li {
 
 nav ul li a {
   display: inline-block;
-  padding: 8px 12px; /* Adjust padding to increase button size */
-  border-radius: 4px; /* Rounded corners */
+  padding: 8px 12px;
+  border-radius: 4px;
   text-decoration: none;
-  color: #333; /* Text color */
-  background-color: #b2c7d2; /* Button background color */
-  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  color: #333;
+  background-color: #b2c7d2;
+  transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-  background-color: #749ab8; /* Hover background color */
+  background-color: #749ab8;
   box-shadow: 0 8px 8px rgba(10, 15, 158, 0.647);
-}
-
-/* Styling for Icon Sizes */
-nav ul li a span {
-  display: inline-block;
-  width: 1.5em; /* Adjust icon width */
-  height: 1.5em; /* Adjust icon height */
-  vertical-align: middle;
-}
-
-/* Additional Padding for Icons (Optional) */
-nav ul li a span {
-  margin-right: 5px; /* Add spacing between icon and text (if needed) */
 }
 
 /* Main Content Area */
@@ -60,230 +46,9 @@ main {
   max-width: 800px;
   margin: 20px auto;
   padding: 20px;
-  background-color: #fff;
+  background-color: #bdb7b7;
   border-radius: 5px;
   box-shadow: 0 8px 16px rgba(11, 126, 141, 0.9);
-}
-
-/* Section Styles */
-section {
-  margin-bottom: 20px;
-}
-
-/* Heading Styles */
-h2 {
-  color: #007bff;
-  text-align: center;
-  border-bottom: 2px solid #007bff;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-  text-decoration: underline;
-}
-
-/* Form Styles */
-form label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-form input {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-}
-
-/* Button Styles */
-button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
-/* Sidebar Styles */
-.sidebar {
-  position: fixed;
-  top: 0;
-  left: -225px;
-  width: 200px;
-  height: 100%;
-  background-color: #333;
-  color: white;
-  padding: 20px;
-  transition: left 0.3s;
-  z-index: 2;
-  box-shadow: 0 0 18px rgb(232, 76, 10); /* Add box shadow */
-}
-
-.sidebar.open {
-  left: 0;
-}
-
-/* Profile Image Styles */
-.profile img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-.sidebar-links a {
-  display: flex; /* Use flexbox to align items */
-  align-items: center; /* Align items vertically */
-  padding: 10px; /* Add padding for spacing */
-  color: #497ae5; /* Text color */
-  text-decoration: none; /* Remove underline */
-  transition: background-color 0.3s; /* Smooth transition on hover */
-}
-
-.sidebar-links a:hover {
-  background-color: #43701c; /* Background color on hover */
-}
-
-.sidebar-links a span {
-  margin-right: 10px; /* Margin between icon and text */
-}
-
-.sidebar-links a:hover span {
-  filter: brightness(0.8); /* Reduce brightness on hover for icon */
-}
-
-/* Dark/Light Mode Switch Styles */
-.theme-switch {
-  margin-top: auto; /* Push the theme switch to the bottom */
-}
-
-/* Toggle switch label */
-.theme-switch label {
-  display: block;
-  margin-bottom: 10px;
-  cursor: pointer;
-}
-
-/* Toggle switch styles */
-.slider {
-  position: relative;
-  display: inline-block;
-  width: 40px;
-  height: 20px;
-  background-color: #ccc;
-  border-radius: 20px;
-  transition: background-color 0.3s;
-}
-
-/* Rounded edges for the toggle switch */
-.slider.round {
-  border-radius: 20px;
-}
-
-/* Toggle button appearance */
-.slider:before {
-  position: absolute;
-  content: '';
-  height: 16px;
-  width: 16px;
-  border-radius: 50%;
-  left: 2px;
-  bottom: 2px;
-  background-color: white;
-  transition: transform 0.3s;
-}
-
-/* Toggle switch when toggled (dark mode) */
-input:checked + .slider {
-  background-color: #007bff;
-}
-
-/* Move the toggle button to the right when toggled */
-input:checked + .slider:before {
-  transform: translateX(20px);
-}
-
-/* Overview Section Styles */
-#overview {
-  overflow: hidden;
-  max-height: calc(100vh - 150px);
-  overflow-y: auto;
-  scroll-behavior: smooth;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 5px 10px rgba(17, 178, 28, 0.837);
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
-.overview-content {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.property-details,
-.financial-summary,
-.utilities-consumption,
-.asset-management,
-.maintenance,
-.vendor-management,
-.security,
-.reports-analytics {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 8px 8px rgba(16, 25, 138, 0.673);
-  transition: transform 0.3s ease;
-}
-
-.property-details:hover,
-.financial-summary:hover,
-.utilities-consumption:hover,
-.asset-management:hover,
-.maintenance:hover,
-.vendor-management:hover,
-.security:hover,
-.reports-analytics:hover {
-  transform: scale(1.02);
-}
-
-
-/* Customization Section Styles */
-#customization {
-  text-align: center;
-  margin-bottom: 40px;
-  padding: 20px;
-  border-radius: 5px;
-  background-color: #ffffff;
-  box-shadow: 0 8px 8px rgba(17, 178, 28, 0.837);
-}
-
-.upload-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.upload-box {
-  width: 200px;
-  height: 200px;
-  border: 2px dashed #ccc;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 10px;
-  box-shadow: 0 8px 8px rgba(16, 25, 138, 0.673);
-}
-
-.upload-box p {
-  font-weight: bold;
 }
 
 /* User Information Container Styles */
@@ -299,8 +64,8 @@ input:checked + .slider:before {
   margin-bottom: 40px;
   padding: 20px;
   border-radius: 5px;
-  background-color: #ffffff;
-  box-shadow: 0 8px 8px rgba(17, 178, 28, 0.837); /* Box shadow */
+  background-color: rgb(105, 169, 190);
+  box-shadow: 0 8px 8px rgb(18, 99, 126);
 }
 
 #user-details {
@@ -308,7 +73,7 @@ input:checked + .slider:before {
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  background-color: #f9f9f9;
+  background-color: #d3d6ea;
   box-shadow: 0 8px 8px rgba(10, 15, 158, 0.647);
   max-width: 400px;
   margin: 0 auto;
@@ -334,16 +99,253 @@ input:checked + .slider:before {
   color: #007bff;
 }
 
-/* Edit User Icon */
-.marketeq--edit-user-6,
-.marketeq--clipboard-edit-3 {
+/* Section Styles */
+section {
+  margin-bottom: 20px;
+}
+
+/* Heading Styles */
+h2 {
+  color: #1c6ec5;
+  font-size: 42px;
+  font-weight: bold;
+  text-align: center;
+  margin: 30px;
+  padding: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  border: 4px solid #007bff;
+  background-image: url('/dashboard/silhouette.jpg');
+}
+
+/* Form Styling */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="file"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="file"] {
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -225px;
+  width: 200px;
+  height: 100%;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  transition: left 0.3s;
+  z-index: 2;
+  box-shadow: 0 0 18px rgb(232, 76, 10);
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+/* Profile Image Styling */
+#profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #007bff;
+}
+
+/* Dark/Light Mode Switch Styles */
+.theme-switch {
+  margin-top: auto;
+}
+
+.theme-switch label {
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.slider {
+  position: relative;
   display: inline-block;
-  width: 1.5em;
-  height: 1.5em;
-  margin-right: 5px;
-  vertical-align: middle;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  width: 40px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+
+.slider.round {
+  border-radius: 20px;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: transform 0.3s;
+}
+
+input:checked + .slider {
+  background-color: #007bff;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+/* Updated Overview Section Styles */
+#overview {
+  overflow: hidden;
+  max-height: calc(100vh - 150px);
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(17, 178, 28, 0.837);
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  background-color: #f9f9f9;
+}
+
+/* Container for Overview Content (Card-like appearance) */
+.overview-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Card-like styling for each content section within Overview */
+.property-details,
+.financial-summary,
+.utilities-consumption,
+.asset-management,
+.maintenance,
+.vendor-management,
+.security,
+.reports-analytics {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect for card-like sections */
+.property-details:hover,
+.financial-summary:hover,
+.utilities-consumption:hover,
+.asset-management:hover,
+.maintenance:hover,
+.vendor-management:hover,
+.security:hover,
+.reports-analytics:hover {
+  transform: scale(1.02);
+}
+
+/* Customization Section Styles */
+#customization {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+}
+
+.upload-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.upload-box {
+  width: 150px;
+  height: 150px;
+  border: 2px dashed #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.upload-box p {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Card-like styling for form sections */
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-bottom: 20px;
+}
+
+/* Hover effect for card-like sections */
+.card:hover {
+  transform: scale(1.02);
+}
+
+/* Card-like styling for form section headers */
+.form-section h3 {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Edit User Icon SVG Data */
@@ -482,6 +484,15 @@ input:checked + .slider:before {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cg fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='4'%3E%3Cpath d='M34 10L42 18'/%3E%3Cpath d='M42 10L34 18'/%3E%3Cpath d='M44 30L37 38L33 34'/%3E%3Cpath fill='%232f88ff' d='M26 10H4V18H26V10Z'/%3E%3Cpath fill='%232f88ff' d='M26 30H4V38H26V30Z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.marketeq--edit-alt-6 {
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50'%3E%3Cg fill='none' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'%3E%3Cpath stroke='white' d='M42.52 13.354L36.647 7.48a2.083 2.083 0 0 0-2.959 0l-6 6l8.834 8.834l6-6a2.084 2.084 0 0 0 0-2.959'/%3E%3Cpath stroke='%23000066' d='m21.813 19.354l8.833 8.834L15.083 43.75H6.25v-8.833z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 .vscode-icons--file-type-poedit {
