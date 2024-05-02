@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
                       alert('Registration successful! You will now be redirected to the login page.');
 
                       // Redirect to login page
-                      window.location.href = 'login.html';
+                      window.location.href = '/PropertyManagement/index.html';
                   });
               }
           }
