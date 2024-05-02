@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
           // Simulate successful login
           // Redirect to dashboard
-          window.location.href = '/dashboard/index.html';
+          window.location.href = '../dashboard/index.html';
       });
   }
 
