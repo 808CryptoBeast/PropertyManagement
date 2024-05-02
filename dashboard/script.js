@@ -44,6 +44,6 @@ document.addEventListener('DOMContentLoaded', function() {
     event.preventDefault(); // Prevent the default behavior of the link
 
     // Perform the redirection to login.html
-    window.location.href = 'PropertManagement/index.html';
+    window.location.href = '/PropertManagement/index.html';
   });
 });
