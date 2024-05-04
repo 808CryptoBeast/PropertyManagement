@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const password = document.getElementById('password').value;
             // Simulate successful login
             // Redirect to dashboard
-            window.location.href = '/dashboard/index.html';
+            window.location.href = 'dashboard/index.html';
         });
     }
     // Event listener for registration link click
