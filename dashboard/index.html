@@ -19,10 +19,18 @@
         </nav>
     </header>
 
+    <!-- Sidebar -->
     <div class="sidebar" id="sidebar">
         <div class="profile">
             <img id="profile-img" src="Ppic.jpg" alt="Profile Photo">
             <p>Account: user123</p>
+            <!-- Sidebar toggle buttons -->
+            <span id="sidebar-open" class="sidebar-toggle-btn">
+                <span class="tabler--circle-arrow-right"></span>
+            </span>
+            <span id="sidebar-close" class="sidebar-toggle-btn" style="display: none;">
+                <span class="tabler--circle-arrow-left"></span>
+            </span>
         </div>
         <div class="sidebar-links">
             <ul>
@@ -41,15 +49,13 @@
                 </li>
                 <li><a href="#"><span class="icon-park-twotone--newspaper-folding"></span>Reports</a></li>
                 <li><a href="../checklist/checklist.html"><span class="icon-park--checklist"></span>Checklist</a></li>
-
             </ul>
         </div>
         <div id="theme-switch" class="theme-switch">
-          <label for="dark-mode-toggle">Dark Mode</label>
-          <div class="slider round"></div>
+            <span id="dark-mode-icon" class="tdesign--mode-dark" style="display: none;"></span>
+            <span id="light-mode-icon" class="f7--sun-dust-fill"></span>
         </div>
-      </div>
-
+    </div>
     <main>
     <section id="user-info" class="section">
         <h2>User Information</h2>
