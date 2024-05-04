@@ -3,35 +3,17 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #0a0e14; /* Dark background */
+  color: #f4fbf3; /* Light text */
   transition: background-color 0.5s ease, color 0.5s ease;
 }
-:root {
-  --background-color-light: #f0f0f0;
-  --text-color-light: #333;
-  --background-color-dark: #333333;
-  --text-color-dark: #ffffff;
-  --header-bg-light: #007bff;
-  --header-bg-dark: #0056b3;
-}
-body[data-theme='light'] {
-  background-color: var(--background-color-light);
-  color: var(--text-color-light);
-}
-body[data-theme='dark'] {
-  background-color: var(--background-color-dark);
-  color: var(--text-color-dark);
-}
 header {
-  background-color: var(--header-bg-light);
+  background-color: #2a3541; /* Dark header background */
   color: white;
   padding: 20px;
   text-align: center;
   transition: background-color 0.5s ease;
 }
-body[data-theme='dark'] header {
-  background-color: var(--header-bg-dark);
-}
-/* Navigation Styles */
 nav ul {
   list-style-type: none;
   padding: 0;
@@ -45,24 +27,22 @@ nav ul li a {
   padding: 8px 12px;
   border-radius: 4px;
   text-decoration: none;
-  color: #333;
-  background-color: #b2c7d2;
+  color: #f4fbf3; /* Light text */
+  background-color: #729fcf; /* Dark theme compatible */
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 nav ul li a:hover {
-  background-color: #749ab8;
+  background-color: #3a6384;
   box-shadow: 0 8px 8px rgba(10, 15, 158, 0.647);
 }
-/* Main Content Area */
 main {
   max-width: 800px;
   margin: 20px auto;
   padding: 20px;
-  background-color: #bdb7b7;
+  background-color: #5c5757; /* Dark theme compatible */
   border-radius: 5px;
   box-shadow: 0 8px 16px rgba(11, 126, 141, 0.9);
 }
-/* User Information Container Styles */
 .user-details-container {
   display: flex;
   justify-content: center;
@@ -74,7 +54,7 @@ main {
   margin-bottom: 40px;
   padding: 20px;
   border-radius: 5px;
-  background-color: rgb(105, 169, 190);
+  background-color: #699da3;
   box-shadow: 0 8px 8px rgb(18, 99, 126);
 }
 #user-details {
@@ -98,17 +78,15 @@ main {
   margin-bottom: 10px;
   font-size: 16px;
   line-height: 1.5;
-  color: #333;
+  color: #f4fbf3; /* Light text */
 }
 #user-details strong {
   font-weight: bold;
   color: #007bff;
 }
-/* Section Styles */
 section {
   margin-bottom: 20px;
 }
-/* Heading Styles */
 h2 {
   color: #1c6ec5;
   font-size: 2em;
@@ -119,16 +97,16 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 1px;
   position: relative;
-  border: 4px solid #007bff;
-  background-image: url('/PropertyManagement/dashboard/silhouette.jpg');
+  border: 4px solid #35597e;
+  background-image: url('/dashboard/silhouette.jpg');
 }
 h3 {
   font-size: 1.2em;
   border: 2px solid black;
   padding: 5px;
   text-align: center;
+  background-image: url('/dashboard/cardimg.jpg');
 }
-/* Form Styling */
 form {
   max-width: 500px;
   margin: 0 auto;
@@ -170,6 +148,7 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #0056b3;
 }
+
 .sidebar {
   position: fixed;
   top: 0;
@@ -201,12 +180,6 @@ button[type="submit"]:hover {
   text-shadow: 0 0 5px white,
                0 0 10px rgba(255, 255, 255, 0.7);
 }
-#sidebar-open {
-  display: block;
-}
-#sidebar-close {
-  display: none;
-}
 
 /* Profile Image Styling */
 #profile-img {
@@ -215,29 +188,6 @@ button[type="submit"]:hover {
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid #007bff;
-}
-
-/* Theme switcher general styling */
-.theme-switch {
-  cursor: pointer;
-  /* Add more styling as needed */
-}
-
-/* Icons general styling */
-.tdesign--mode-dark, .f7--sun-dust-fill {
-  display: none; /* Both icons are hidden by default */
-  cursor: pointer;
-  /* Adjust sizing and alignment as necessary */
-}
-
-/* Light mode: show the moon icon and hide the sun */
-.light-mode .tdesign--mode-dark {
-  display: inline-block; /* Show moon */
-}
-
-/* Dark mode: show the sun icon and hide the moon */
-.dark-mode .f7--sun-dust-fill {
-  display: inline-block; /* Show sun */
 }
 
 /* Updated Overview Section Styles */
@@ -251,7 +201,7 @@ button[type="submit"]:hover {
   box-shadow: 0 5px 10px rgba(17, 178, 28, 0.837);
   scrollbar-width: none;
   -ms-overflow-style: none;
-  background-color: #f9f9f9;
+  background-color: #484242;
 }
 
 /* Container for Overview Content (Card-like appearance) */
@@ -259,6 +209,7 @@ button[type="submit"]:hover {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  background-color: #484242;
 }
 
 /* Card-like styling for each content section within Overview */
@@ -270,11 +221,10 @@ button[type="submit"]:hover {
 .vendor-management,
 .security,
 .reports-analytics {
-  background-color: #fff;
+  background-color: #e4d8d8;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
 }
 
 /* Hover effect for card-like sections */
@@ -295,7 +245,7 @@ button[type="submit"]:hover {
   margin-bottom: 40px;
   padding: 20px;
   border-radius: 5px;
-  background-color: #f9f9f9;
+  background-color: #302c2c;
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -320,17 +270,16 @@ button[type="submit"]:hover {
 
 .upload-box p {
   font-weight: bold;
-  color: #333;
+  color: #f4fbf3; /* Light text */
 }
 
 /* Card-like styling for form sections */
 .card {
-  background-color: #fff;
+  background-color: #564e4e;
+  color: white;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  margin-bottom: 20px;
 }
 
 /* Hover effect for card-like sections */
