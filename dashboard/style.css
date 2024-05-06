@@ -6,7 +6,7 @@ body {
   background-color: #0a0e14; /* Dark background */
   color: #f4fbf3; /* Light text */
   transition: background-color 0.5s ease, color 0.5s ease;
-  background-image: url('/PropertyManagement/dashboard/background.jpg');
+  background-image: url('PropertyManagement/dashboard/background.jpg');
   background-size: cover; /* Make sure the background image covers the whole body */
   background-position: center; /* Center the background image */
 }
