@@ -6,6 +6,9 @@ body {
   background-color: #0a0e14; /* Dark background */
   color: #f4fbf3; /* Light text */
   transition: background-color 0.5s ease, color 0.5s ease;
+  background-image: url('/dashboard/background.jpg');
+  background-size: cover; /* Make sure the background image covers the whole body */
+  background-position: center; /* Center the background image */
 }
 header {
   background-color: #2a3541; /* Dark header background */
@@ -13,6 +16,9 @@ header {
   padding: 20px;
   text-align: center;
   transition: background-color 0.5s ease;
+  background-image: url('/dashboard/computerPM.jpg');
+  background-size: cover; /* Make sure the background image covers the whole header */
+  background-position: center; /* Center the background image */
 }
 nav ul {
   list-style-type: none;
@@ -28,7 +34,7 @@ nav ul li a {
   border-radius: 4px;
   text-decoration: none;
   color: #f4fbf3; /* Light text */
-  background-color: #729fcf; /* Dark theme compatible */
+  background-color: #484242; /* User Information background-color */
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 nav ul li a:hover {
@@ -41,20 +47,23 @@ main {
   padding: 20px;
   background-color: #5c5757; /* Dark theme compatible */
   border-radius: 5px;
-  box-shadow: 0 8px 16px rgba(11, 126, 141, 0.9);
+  box-shadow: 0 0 16px rgba(11, 126, 141, 0.9);
 }
 .user-details-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  box-shadow: 0 8px 8px rgba(39, 158, 10, 0.647);
+  box-shadow: 0 0 18px rgba(39, 158, 10, 0.647);
+  background-image: url('/dashboard/skyPM.jpg');
+  background-size: cover; /* Make sure the background image covers the whole container */
+  background-position: center; /* Center the background image */
 }
 #user-info {
   margin-bottom: 40px;
   padding: 20px;
   border-radius: 5px;
-  background-color: #699da3;
+  background-color: #484242;
   box-shadow: 0 8px 8px rgb(18, 99, 126);
 }
 #user-details {
@@ -98,14 +107,18 @@ h2 {
   letter-spacing: 1px;
   position: relative;
   border: 4px solid #35597e;
-  background-image: url('/dashboard/silhouette.jpg');
+  background-image: url('/dashboard/propertyM.jpg');
+  background-size: cover; /* Make sure the background image covers the whole h2 */
+  background-position: center; /* Center the background image */
 }
 h3 {
   font-size: 1.2em;
   border: 2px solid black;
   padding: 5px;
   text-align: center;
-  background-image: url('/dashboard/cardimg.jpg');
+  background-image: url('/dashboard/dataGM.jpg');
+  background-size: cover; /* Make sure the background image covers the whole h3 */
+  background-position: center; /* Center the background image */
 }
 form {
   max-width: 500px;
@@ -155,12 +168,15 @@ button[type="submit"]:hover {
   left: -225px;
   width: 225px;
   height: 100%;
-  background-color: #333;
+  background-color: #484242;
   color: white;
   padding: 20px;
   transition: left 0.3s;
   z-index: 2;
-  box-shadow: 0 0 18px rgb(232, 76, 10);
+  box-shadow: 0 0 18px rgb(10, 105, 230);
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
 }
 .sidebar.open {
   left: 0;
@@ -168,7 +184,7 @@ button[type="submit"]:hover {
 .sidebar-toggle-btn {
   position: absolute;
   top: 20px;
-  right: -30px;
+  right: -15px;
   padding: 10px;
   font-size: 24px;
   color: white;
@@ -198,7 +214,7 @@ button[type="submit"]:hover {
   scroll-behavior: smooth;
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 0 5px 10px rgba(17, 178, 28, 0.837);
+  box-shadow: 0 0 18px rgba(17, 178, 28, 0.837);
   scrollbar-width: none;
   -ms-overflow-style: none;
   background-color: #484242;
@@ -225,6 +241,9 @@ button[type="submit"]:hover {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-image: url('/dashboard/cardBackground.jpg'); /* Set a background image for each card */
+  background-size: cover; /* Make sure the background image covers the whole card */
+  background-position: center; /* Center the background image */
 }
 
 /* Hover effect for card-like sections */
@@ -241,12 +260,17 @@ button[type="submit"]:hover {
 
 /* Customization Section Styles */
 #customization {
+  max-height: 500px; /* Example height - adjust accordingly */
+  overflow-y: auto; /* Enable vertical scrolling */
+  scroll-behavior: smooth; /* Optional - for smooth scrolling */
   text-align: center;
   margin-bottom: 40px;
   padding: 20px;
   border-radius: 5px;
-  background-color: #302c2c;
-  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+  background-color: #484242;
+  box-shadow: 0 0 18px rgb(10, 105, 230);
+    scrollbar-width: none; /* Hides scrollbar */
+  -ms-overflow-style: none;  /* IE and Edge */
 }
 
 .upload-container {
@@ -294,7 +318,6 @@ button[type="submit"]:hover {
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 /* For screens smaller than 576px (small smartphones) */
 @media only screen and (max-width: 576px) {
   body {
