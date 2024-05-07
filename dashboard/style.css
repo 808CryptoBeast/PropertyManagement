@@ -16,7 +16,7 @@ header {
   padding: 20px;
   text-align: center;
   transition: background-color 0.5s ease;
-  background-image: url('/dashboard/computerPM.jpg');
+  background-image: url('/PropertyManagement/dashboard/computerPM.jpg');
   background-size: cover; /* Make sure the background image covers the whole header */
   background-position: center; /* Center the background image */
 }
