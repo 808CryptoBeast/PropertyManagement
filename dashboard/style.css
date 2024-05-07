@@ -55,7 +55,7 @@ main {
   align-items: center;
   flex-direction: column;
   box-shadow: 0 0 18px rgba(39, 158, 10, 0.647);
-  background-image: url('/dashboard/skyPM.jpg');
+  background-image: url('/PropertyManagement/dashboard/skyPM.jpg');
   background-size: cover; /* Make sure the background image covers the whole container */
   background-position: center; /* Center the background image */
 }
@@ -107,7 +107,7 @@ h2 {
   letter-spacing: 1px;
   position: relative;
   border: 4px solid #35597e;
-  background-image: url('/dashboard/propertyM.jpg');
+  background-image: url('/PropertyManagement/dashboard/propertyM.jpg');
   background-size: cover; /* Make sure the background image covers the whole h2 */
   background-position: center; /* Center the background image */
 }
@@ -116,7 +116,7 @@ h3 {
   border: 2px solid black;
   padding: 5px;
   text-align: center;
-  background-image: url('/dashboard/dataGM.jpg');
+  background-image: url('/PropertyManagement/dashboard/dataGM.jpg');
   background-size: cover; /* Make sure the background image covers the whole h3 */
   background-position: center; /* Center the background image */
 }
