@@ -73,3 +73,16 @@ document.addEventListener('DOMContentLoaded', function() {
   sidebarClose.addEventListener('click', closeSidebar);
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+  const container = document.querySelector('.plan-container');
+  if (container) {
+    container.addEventListener('wheel', function (e) {
+      if (e.deltaY > 0) {
+        container.scrollLeft += 100; // Adjust the value to change scroll speed
+      } else {
+        container.scrollLeft -= 100; // Adjust the value to change scroll speed
+      }
+      e.preventDefault(); // Prevent the default vertical scroll
+    });
+  }
+});
